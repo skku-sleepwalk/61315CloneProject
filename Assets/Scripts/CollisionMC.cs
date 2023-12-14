@@ -31,7 +31,7 @@ public class CollisionMC : MonoBehaviour
             if (collision.gameObject.CompareTag("Enemy"))
             {
         
-                if (!(collision.contacts[0].normal.y<1.5f&&collision.contacts[0].normal.y > 0.5f)){
+                if (!(collision.contacts[0].normal.y<1.8f&&collision.contacts[0].normal.y > 0.2f)){
                 //바닥에 닿는 것이 아닌 경우
                 if (itemManage.getIsShield())
                 {

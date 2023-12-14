@@ -12,7 +12,7 @@ public class CollisionFoot : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("MainCharacter") && collision.contacts[0].normal.y>-1.3f&& collision.contacts[0].normal.y < -0.7f)
+        if (collision.gameObject.CompareTag("MainCharacter") && collision.contacts[0].normal.y>-1.8f&& collision.contacts[0].normal.y < -0.2f)
         {
             BoxCollider2D Box = gameObject.GetComponent<BoxCollider2D>();
             Rigidbody2D rigid = gameObject.GetComponent<Rigidbody2D>();

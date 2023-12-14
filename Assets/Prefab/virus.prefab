@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 7338272899807100820}
   - component: {fileID: -4558911694580136552}
   - component: {fileID: -5949404254713818826}
-  - component: {fileID: 7369020313833358148}
   - component: {fileID: 4745411235243621466}
+  - component: {fileID: -5581704431478767313}
   m_Layer: 8
   m_Name: virus
   m_TagString: Enemy
@@ -197,7 +197,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7369020313833358148
+--- !u!114 &4745411235243621466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322918886049153418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3842c665748a3254782ba48118a80a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5581704431478767313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,15 +226,11 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 8718ee1c27778874f9566a6f118e8b8f, type: 2}
   - {fileID: 9100000, guid: 1d63ebf62e6660443a29c7fd59da61a4, type: 2}
   - {fileID: 9100000, guid: adb39fcfd0dbe5244a7e963b4fd78a0a, type: 2}
---- !u!114 &4745411235243621466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3322918886049153418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3842c665748a3254782ba48118a80a11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - {fileID: 9100000, guid: af88e1c13f2f5124c9c0f18dd9f6ae19, type: 2}
+  - {fileID: 9100000, guid: 8718ee1c27778874f9566a6f118e8b8f, type: 2}
+  - {fileID: 9100000, guid: 1d63ebf62e6660443a29c7fd59da61a4, type: 2}
+  - {fileID: 9100000, guid: adb39fcfd0dbe5244a7e963b4fd78a0a, type: 2}
+  - {fileID: 9100000, guid: af88e1c13f2f5124c9c0f18dd9f6ae19, type: 2}
+  - {fileID: 9100000, guid: 8718ee1c27778874f9566a6f118e8b8f, type: 2}
+  - {fileID: 9100000, guid: 1d63ebf62e6660443a29c7fd59da61a4, type: 2}
+  - {fileID: 9100000, guid: adb39fcfd0dbe5244a7e963b4fd78a0a, type: 2}

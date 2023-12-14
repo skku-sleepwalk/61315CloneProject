@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Pool;
 
 public class ObjectGenerator : MonoBehaviour
 {
-
+    private static int[] floorNum = new int[10];
     public GameObject floors;
+    public Sprite floor1;
+    public Sprite floor2;
+
     public GameObject enemy;
     public GameObject shieldItem;
     // Start is called before the first frame update
@@ -33,12 +37,15 @@ public class ObjectGenerator : MonoBehaviour
         // 특정 좌표에 있는 객체를 찾기
         Collider2D[] colliders = Physics2D.OverlapCircleAll(targetPosition, 0.01f);
 
-        if (colliders.Length == 0)
+        if (colliders.Length == 0 || colliders[0].CompareTag("SpecialTile"))
         {
             // 특정 좌표에 객체가 없으면 새로운 객체 생성
-            return SpawnObject(targetPosition,floors);
+            return SpawnObject(targetPosition, floors);
         }
-        else return null;
+
+       
+            return null;
+        
     }
 
     GameObject SpawnObject(Vector3 spawnPosition, GameObject obj)
@@ -46,6 +53,21 @@ public class ObjectGenerator : MonoBehaviour
         // 새로운 객체 생성
         
         GameObject newObject = Instantiate(obj, spawnPosition, Quaternion.identity);
+        if (obj == floors)
+        {
+            switch (floorNum[((uint)(spawnPosition.y)) % 10])
+            {
+                case 0:
+                    break;
+                case 1:
+                    newObject.GetComponent<SpriteRenderer>().sprite = floor1;
+                    break;
+                case 2:
+                    newObject.GetComponent<SpriteRenderer>().sprite = floor2;
+                    floorNum[((uint)(spawnPosition.y)) % 10] = -1; break;
+            }
+            floorNum[((uint)(spawnPosition.y)) % 10]++;
+        }
         return newObject;
       
     }
@@ -53,12 +75,17 @@ public class ObjectGenerator : MonoBehaviour
     {
         GameObject newObject = PoolingManager.GetObject();
         newObject.transform.position = spawnPosition;
+        
         return newObject;
     }
     void Start()
     {
+        for(int i = 0; i < 10; i++)
+        {
+            floorNum[i] = 0;
+        }
         Frequency = 2;
-         summonCool = 0f;
+        summonCool = 0f;
         for (int j=0;j<10;j++){
             randomValue = Random.Range(0, 15);//적
             randomValue2 = Random.Range(0, 15);//아이템 위치

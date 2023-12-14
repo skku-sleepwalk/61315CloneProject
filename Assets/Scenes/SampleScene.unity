@@ -271,7 +271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbe873664c04ac41b2e54ac1ed8243b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chapter: {fileID: 8300000, guid: 967b046b05d390f46ac75e089f7ad0da, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floors: {fileID: 8553759924043118838, guid: 96ee855a687131f4ebd35fdfe2fcadd3, type: 3}
+  floor1: {fileID: 1200087534, guid: 2d4eeb06cae7e7d4dbdd3c198dfb5ad4, type: 3}
+  floor2: {fileID: 2096258175, guid: 2d4eeb06cae7e7d4dbdd3c198dfb5ad4, type: 3}
   enemy: {fileID: 3322918886049153418, guid: acc68e138dace044694e10af74d17a35, type: 3}
   shieldItem: {fileID: 7314854713721929783, guid: f0f5112527c58b0429c056a9ab07449f, type: 3}
   character: {fileID: 4888685136574566978}
@@ -1245,6 +1246,7 @@ GameObject:
   - component: {fileID: 9046086870128307629}
   - component: {fileID: 9046086870128307630}
   - component: {fileID: 9046086870128307631}
+  - component: {fileID: 9046086870128307632}
   m_Layer: 0
   m_Name: 'MainCharacter '
   m_TagString: MainCharacter
@@ -1465,3 +1467,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breaked: {fileID: 8300000, guid: e1a04e8f910b2c44ea2052849b2e5716, type: 3}
+--- !u!114 &9046086870128307632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4888685136574566978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a21af311d60e44ca13a90a5a86a1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chapter: {fileID: 8300000, guid: 967b046b05d390f46ac75e089f7ad0da, type: 3}

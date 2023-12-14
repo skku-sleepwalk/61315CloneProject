@@ -6,15 +6,11 @@ using UnityEngine;
 public class CollisionCheck2FallAnimation : MonoBehaviour
 {
     private Animator animator;
-    private int student;
-    public AudioClip chapter;
-    private int[] ageTable = { 15, 30, 40 };
-    private int index = 0;
-    private string[] names = { "Student", "Doctor", "Elder" };//가운데 값 변경하면서 조절
+
+
     private void Awake()
     {
-        //student = 30;
-        student = 5;
+        
         animator = GetComponent<Animator>();
     }
   private void oppositeBool(string changeTrue, string changeFalse)
@@ -46,18 +42,5 @@ public class CollisionCheck2FallAnimation : MonoBehaviour
             oppositeBool("Fall","NotFall");
         }
     }
-    private void Update()
-    {
-        if (Score.getScore() > student)
-        {
-            student += ageTable[index];
-            animator.SetBool(names[index++], true);
-            AudioSource ChapterChanged=GetComponent<AudioSource>();
-            ChapterChanged.PlayOneShot(chapter);
-            
-
-
-            // 이거 옮겨야
-        }
-    }
+   
 }

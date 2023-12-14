@@ -11,11 +11,13 @@ public class CharacterAge : MonoBehaviour
     private int[] ageTable = { 15, 30, 38 };
     private int index = 0;
     private string[] names = { "Student", "Doctor", "Elder","Return" };//가운데 값 변경하면서 조절
+    private string[] job = { "Doctor", "Nurse", "Pharmacist" };
     private int returnNum = -1;
     private void Awake()
     {
         student = 15;
-
+        int rand = Random.Range(0, 3);
+        names[1] = job[rand];
         returnNum = -1;
         animator = GetComponent<Animator>();
         

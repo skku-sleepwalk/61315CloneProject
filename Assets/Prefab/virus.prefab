@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: -5949404254713818826}
   - component: {fileID: 4745411235243621466}
   - component: {fileID: -5581704431478767313}
-  - component: {fileID: -8215264038150105038}
   - component: {fileID: -4684285527019837699}
   m_Layer: 8
   m_Name: virus
@@ -128,7 +127,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.03822565}
+  m_Offset: {x: -0.0012336373, y: -0.053637862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -139,7 +138,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.3183012}
+  m_Size: {x: 0.2065171, y: 0.2646296}
   m_EdgeRadius: 0
 --- !u!114 &8200528973737723501
 MonoBehaviour:
@@ -227,28 +226,16 @@ MonoBehaviour:
   init: {fileID: 9100000, guid: af88e1c13f2f5124c9c0f18dd9f6ae19, type: 2}
   cigarette:
   - {fileID: 9100000, guid: 8718ee1c27778874f9566a6f118e8b8f, type: 2}
-  - {fileID: 9100000, guid: 1d63ebf62e6660443a29c7fd59da61a4, type: 2}
+  - {fileID: 9100000, guid: a3d91c0ec7a8dcf43872258aa1d72a64, type: 2}
   - {fileID: 9100000, guid: adb39fcfd0dbe5244a7e963b4fd78a0a, type: 2}
   - {fileID: 9100000, guid: af88e1c13f2f5124c9c0f18dd9f6ae19, type: 2}
   - {fileID: 9100000, guid: 8718ee1c27778874f9566a6f118e8b8f, type: 2}
-  - {fileID: 9100000, guid: 1d63ebf62e6660443a29c7fd59da61a4, type: 2}
+  - {fileID: 9100000, guid: a3d91c0ec7a8dcf43872258aa1d72a64, type: 2}
   - {fileID: 9100000, guid: adb39fcfd0dbe5244a7e963b4fd78a0a, type: 2}
   - {fileID: 9100000, guid: af88e1c13f2f5124c9c0f18dd9f6ae19, type: 2}
   - {fileID: 9100000, guid: 8718ee1c27778874f9566a6f118e8b8f, type: 2}
-  - {fileID: 9100000, guid: 1d63ebf62e6660443a29c7fd59da61a4, type: 2}
+  - {fileID: 9100000, guid: a3d91c0ec7a8dcf43872258aa1d72a64, type: 2}
   - {fileID: 9100000, guid: adb39fcfd0dbe5244a7e963b4fd78a0a, type: 2}
---- !u!114 &-8215264038150105038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3322918886049153418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3ba5f2a37bd12419f7dd9b298a1d34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-4684285527019837699
 MonoBehaviour:
   m_ObjectHideFlags: 0

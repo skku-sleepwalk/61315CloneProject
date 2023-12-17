@@ -40,32 +40,32 @@ public class CollisionMC : MonoBehaviour
         
                 if (!(collision.contacts[0].normal.y<1.8f&&collision.contacts[0].normal.y > 0.2f)){
                 //바닥에 닿는 것이 아닌 경우
-                if (itemManage.getIsShield())
-                {
-                    itemManage.isShieldToFalse();
-                    shield = GameObject.FindWithTag("ShieldItem");
-                    Destroy(shield);
+                    if (itemManage.getIsShield())
+                    {
+                        itemManage.isShieldToFalse();
+                        shield = GameObject.FindWithTag("ShieldItem");
+                        Destroy(shield);
+                    }
+                    else
+                    {
+                        AudioManagerMC.AudioPlay(GG);
+                        //UnityEditor.EditorApplication.isPlaying = false;
+                        BroadcastMessage("StopFunction", SendMessageOptions.DontRequireReceiver);
+                    }
+                    Animator animator=collision.gameObject.GetComponent<Animator>();
+                    animator.SetTrigger("cigaretteRun");
                 }
                 else
                 {
-                    AudioManagerMC.AudioPlay(GG);
-                    //UnityEditor.EditorApplication.isPlaying = false;
-                    BroadcastMessage("StopFunction", SendMessageOptions.DontRequireReceiver);
+                    box.isTrigger = true;
+                    Invoke("isTriggerFalse", 0.5f);
+                    ApplyForce();
                 }
-                Animator animator=collision.gameObject.GetComponent<Animator>();
-                animator.SetTrigger("cigaretteRun");
-             }
-            else
-            {
-                box.isTrigger = true;
-                Invoke("isTriggerFalse", 0.5f);
-                ApplyForce();
-            }
             
 
           
 
-        }
+            }
 
     }
     void ApplyForce()

@@ -2,10 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stop : MonoBehaviour
+public class Stop: MonoBehaviour
 {
-   public void StopFunction()
-    {
-        Time.timeScale = 0;
+    public GameObject Camera;
+    public GameObject btn;
+
+    public void StopFunction()
+    {   GameObject tmp=Instantiate(btn);
+        tmp.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y, 0);
+        Time.timeScale = 0f;
+        CameraMove.isMoving = false;
+
     }
 }

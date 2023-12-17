@@ -8,5 +8,6 @@ public class revive : MonoBehaviour
     {
         Time.timeScale = 1f;
         CameraMove.isMoving = true;
+        Stop.stoped = false;
     }
 }

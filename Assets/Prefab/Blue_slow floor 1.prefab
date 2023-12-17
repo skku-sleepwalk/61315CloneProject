@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -235312658242540347}
   - component: {fileID: 2324327122435306244}
   - component: {fileID: 4413301121182974117}
+  - component: {fileID: 8584183189095869483}
   m_Layer: 0
   m_Name: Blue_slow floor 1
   m_TagString: SpecialTile
@@ -151,3 +152,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231e007b45989c5419916414c958b112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8584183189095869483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8668353885512103870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c215da3a9045294c8e9233f18084cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blue: {fileID: -1342232056, guid: 9092a9a798af7b64289e9092db5fef5b, type: 3}
+  pink: {fileID: 68733012, guid: 8f2abb503e12f1546bba865125982fd8, type: 3}

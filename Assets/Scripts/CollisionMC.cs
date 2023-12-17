@@ -11,6 +11,7 @@ public class CollisionMC : MonoBehaviour
     private Vector3 forceDirection = new Vector3(0f, 1f, 0f); // 힘을 가할 방향
     public AudioClip GG;
     private BoxCollider2D box;
+
     private void Awake()
     {
         box=GetComponent<BoxCollider2D>();
@@ -18,9 +19,15 @@ public class CollisionMC : MonoBehaviour
     GameObject shield;
     void OnBecameInvisible()
     {
-        if(Score.getScore()>=0)
-        Destroy(gameObject);
-    //화면 밖 나가면 제거
+        if (Score.getScore() >= 0)
+        {
+           AudioManagerMC.AudioPlay(GG);
+            BroadcastMessage("StopFunction", SendMessageOptions.DontRequireReceiver);
+            
+         
+        }
+ 
+        //화면 밖 나가면 제거
     }
     private void isTriggerFalse()
     {
@@ -43,7 +50,7 @@ public class CollisionMC : MonoBehaviour
                 {
                     AudioManagerMC.AudioPlay(GG);
                     //UnityEditor.EditorApplication.isPlaying = false;
-                    Destroy(gameObject);
+                    BroadcastMessage("StopFunction", SendMessageOptions.DontRequireReceiver);
                 }
                 Animator animator=collision.gameObject.GetComponent<Animator>();
                 animator.SetTrigger("cigaretteRun");

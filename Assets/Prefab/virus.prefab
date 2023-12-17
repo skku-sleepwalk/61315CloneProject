@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: -5949404254713818826}
   - component: {fileID: 4745411235243621466}
   - component: {fileID: -5581704431478767313}
+  - component: {fileID: -8215264038150105038}
+  - component: {fileID: -4684285527019837699}
   m_Layer: 8
   m_Name: virus
   m_TagString: Enemy
@@ -179,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!95 &-5949404254713818826
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -196,7 +198,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &4745411235243621466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,3 +237,27 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 8718ee1c27778874f9566a6f118e8b8f, type: 2}
   - {fileID: 9100000, guid: 1d63ebf62e6660443a29c7fd59da61a4, type: 2}
   - {fileID: 9100000, guid: adb39fcfd0dbe5244a7e963b4fd78a0a, type: 2}
+--- !u!114 &-8215264038150105038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322918886049153418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3ba5f2a37bd12419f7dd9b298a1d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4684285527019837699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322918886049153418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46aa8f9eca68bb2408841763cc6a1297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

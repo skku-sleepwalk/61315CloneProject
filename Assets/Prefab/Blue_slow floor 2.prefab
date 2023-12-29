@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 803702204254333624}
   - component: {fileID: 2671616233230675525}
   - component: {fileID: -235312658242540347}
-  - component: {fileID: 2324327122435306244}
   - component: {fileID: 4413301121182974117}
   - component: {fileID: 1522608216150091846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blue_slow floor 2
   m_TagString: SpecialTile
   m_Icon: {fileID: 0}
@@ -127,19 +126,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.69743913, y: 0.64}
   m_EdgeRadius: 0
---- !u!114 &2324327122435306244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8668353885512103870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0444951a00cef6748b842533b064474d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
 --- !u!114 &4413301121182974117
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class backgroundChanger : MonoBehaviour
     public Sprite blue;
 
     public Sprite pink;
+    public Sprite yellow;
     void Start()
     {
         myImage= GetComponent<Image>();
@@ -20,10 +21,17 @@ public class backgroundChanger : MonoBehaviour
     void Update()
     {
 
-        if (Score.getScore() % 300 >= 99)
+        if (Score.getScore() % 300 >= 199)
+        {
+            myImage.sprite = yellow;
+        }
+        else if (Score.getScore() % 300 >= 99)
         {
             myImage.sprite = pink;
         }
-        
+        else
+        {
+            myImage.sprite = blue;
+        }
     }
 }

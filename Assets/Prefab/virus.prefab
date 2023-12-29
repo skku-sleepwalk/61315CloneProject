@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 7338272899807100820}
   - component: {fileID: -4558911694580136552}
   - component: {fileID: -5949404254713818826}
-  - component: {fileID: 4745411235243621466}
   - component: {fileID: -4684285527019837699}
   - component: {fileID: 8094980069090980769}
   m_Layer: 8
@@ -106,7 +105,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -199,18 +198,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4745411235243621466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3322918886049153418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3842c665748a3254782ba48118a80a11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-4684285527019837699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +231,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 706d26462ff3fbb4692d8137683ac246, type: 2}
   - {fileID: 9100000, guid: df08559e373e7a24698435ccf39a5b07, type: 2}
   - {fileID: 9100000, guid: 58a8734bc3e367d4e9828e72d79a8fc4, type: 2}
-  - {fileID: 9100000, guid: af88e1c13f2f5124c9c0f18dd9f6ae19, type: 2}
-  - {fileID: 9100000, guid: 8718ee1c27778874f9566a6f118e8b8f, type: 2}
-  - {fileID: 9100000, guid: a3d91c0ec7a8dcf43872258aa1d72a64, type: 2}
-  - {fileID: 9100000, guid: adb39fcfd0dbe5244a7e963b4fd78a0a, type: 2}
+  - {fileID: 9100000, guid: bf86b7bd11e823747a0061763cf6811d, type: 2}
+  - {fileID: 9100000, guid: 006c699e8b43dcf4e9beba71b52e08f3, type: 2}
+  - {fileID: 9100000, guid: 7753012451fadbf4b98d06e508c73c04, type: 2}
+  - {fileID: 9100000, guid: 7bac9726ff05efb44bc39319af627a29, type: 2}

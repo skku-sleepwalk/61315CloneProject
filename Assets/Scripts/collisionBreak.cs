@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class collisionBreak : MonoBehaviour
 {
-    public GameObject targetObject;
+
     // 알파값을 설정하는 함수
     void SetObjectAlpha(GameObject obj, float alphaValue)
     {
@@ -34,21 +34,15 @@ public class collisionBreak : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))   //마우스 좌측 버튼을 누름.
         {
-           
             if (collision.gameObject.CompareTag("Main delete"))
             {
                 if (BreakCoolTime.getCoolTime())
                 {
-                    if (targetObject == null)
-                    {
-                        targetObject = gameObject;
-                    }
                     // 알파값을 0으로 설정
-                    SetObjectAlpha(targetObject, 0f);
-
+                    SetObjectAlpha(gameObject, 0f);
                     // Box Collider를 비활성화
-                    DisableBoxCollider(targetObject);
-                    Timer timer = new Timer(BreakCoolTime.setCoolTime, null, 100, Timeout.Infinite);
+                    DisableBoxCollider(gameObject);
+                    //Timer timer = new Timer(BreakCoolTime.setCoolTime, null, 100, Timeout.Infinite);
                 }
             }
         }

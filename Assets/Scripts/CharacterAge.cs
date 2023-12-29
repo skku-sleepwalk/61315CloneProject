@@ -17,9 +17,8 @@ public class CharacterAge : MonoBehaviour
     private int index = 0;
     private string[] names = { "Student", "Doctor", "Elder", "Return" };//가운데 값 변경하면서 조절
     private string[] job = { "Doctor", "Nurse", "Pharmacist" };
-    private string[][] jobs = { new string[] { "Doctor", "Nurse", "Pharmacist" }, new string[] {"Youtuber","Athelete","Singer" },new string[] {""," ","  " } };
+    private string[][] jobs = { new string[] { "Doctor", "Nurse", "Pharmacist" }, new string[] {"Youtuber","Athelete","Singer" },new string[] {"Teacher","Politician","Judge" } };
     private int returnNum = -1;
-    private int newAge = 0;
     int rand;
     private void Awake()
     {
@@ -28,7 +27,7 @@ public class CharacterAge : MonoBehaviour
          rand = Random.Range(0, 3);
         names[1] = job[rand];
         returnNum = -1;
-        newAge = 0;
+
         animator = GetComponent<Animator>();
         animator.runtimeAnimatorController = controller;
         controllers = new RuntimeAnimatorController[3];

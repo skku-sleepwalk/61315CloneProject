@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    public GameObject Target; 
+    public GameObject Target;
     public float offsetX = 0.0f;
     public static bool isMoving;
     Vector3 TargetPos;
@@ -15,7 +15,7 @@ public class CameraMove : MonoBehaviour
     }
     void LateUpdate()
     {
-        if (isMoving)
+        if (true)
         {
 
 
@@ -36,7 +36,8 @@ public class CameraMove : MonoBehaviour
                 );
             }
             // 타겟의 x, y, z 좌표에 카메라의 좌표를 더하여 카메라의 위치를 결정
-            transform.position = TargetPos;
+            transform.position = Vector3.Lerp(transform.position, TargetPos, .2f);
+            //transform.position = Vector3 (t
         }
     }
 }

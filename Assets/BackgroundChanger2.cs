@@ -9,6 +9,7 @@ public class BackgroundChanger2 : MonoBehaviour
     public Sprite blue;
 
     public Sprite pink;
+    public Sprite yellow;
     void Start()
     {
         myImage = GetComponent<SpriteRenderer>();
@@ -17,10 +18,18 @@ public class BackgroundChanger2 : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (Score.getScore()%300>=99)
+    { 
+        if(Score.getScore() % 300 >= 199)
+        {
+            myImage.sprite = yellow;
+        }
+        else if (Score.getScore()%300>=99)
         {
             myImage.sprite = pink;
+        }
+        else
+        {
+            myImage.sprite = blue;
         }
 
     }

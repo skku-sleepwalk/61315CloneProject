@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8553759924043118835}
   - component: {fileID: 8553759924043118836}
-  - component: {fileID: 2010811077986145241}
   - component: {fileID: -2298191302989369499}
   - component: {fileID: 5118159446930932002}
   - component: {fileID: -8239770069622839855}
+  - component: {fileID: -1186518812712191026}
   m_Layer: 6
   m_Name: floor
   m_TagString: Floor
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1994005142, guid: 2d4eeb06cae7e7d4dbdd3c198dfb5ad4, type: 3}
+  m_Sprite: {fileID: -2009259437, guid: 179e32d42a9d206479dde0bf7b21113b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,19 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2010811077986145241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553759924043118838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0444951a00cef6748b842533b064474d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
 --- !u!114 &-2298191302989369499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +117,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.19666666, y: 0.2}
+    oldSize: {x: 0.2, y: 0.2}
     newSize: {x: 0.39333332, y: 0.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -154,3 +141,18 @@ MonoBehaviour:
   slow: {fileID: 8668353885512103870, guid: 4cd318b8945a9364383e47aed9ca0c25, type: 3}
   slowR: {fileID: 8668353885512103870, guid: d71fe913b9d7a6c4f841f654409b1cce, type: 3}
   slowL: {fileID: 8668353885512103870, guid: c1b65880c878ccf44baaa2739cbe1be0, type: 3}
+--- !u!114 &-1186518812712191026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8553759924043118838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527b32afe18a6e746bb1816282ce6cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blue: {fileID: -2009259437, guid: 179e32d42a9d206479dde0bf7b21113b, type: 3}
+  pink: {fileID: 256567221, guid: c981233b28e25ee418a8895a00d147ad, type: 3}
+  yellow: {fileID: -921549391, guid: 35c963e69eed3ac4e9cb191742e7ba60, type: 3}

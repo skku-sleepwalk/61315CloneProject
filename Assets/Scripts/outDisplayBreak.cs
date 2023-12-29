@@ -10,6 +10,7 @@ public class outDisplayBreak : MonoBehaviour
     {
        character =GameObject.FindWithTag("MainCharacter");
     }
+    /*
     void Update(){
         //ebug.Log(character.transform.position.y);
         if (character)
@@ -27,5 +28,10 @@ public class outDisplayBreak : MonoBehaviour
             }
         }
         
+    }*/
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

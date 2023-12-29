@@ -4,29 +4,40 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    public GameObject Target; 
-    public float offsetX = 0.0f;  
+    public GameObject Target;
+    public float offsetX = 0.0f;
+    public static bool isMoving;
     Vector3 TargetPos;
     public float fallingSpeed;
-    void FixedUpdate()
+    private void Awake()
     {
-        if (Target.transform.position.y < transform.position.y)
+        isMoving = true;
+    }
+    void LateUpdate()
+    {
+        if (true)
         {
-            TargetPos = new Vector3(
-            Target.transform.position.x + offsetX,
-            Target.transform.position.y,
-            -10
-            );
+
+
+            if (Target.transform.position.y < transform.position.y)
+            {
+                TargetPos = new Vector3(
+                Target.transform.position.x + offsetX,
+                Target.transform.position.y,
+                -10
+                );
+            }
+            else
+            {
+                TargetPos = new Vector3(
+                Target.transform.position.x + offsetX,//X
+                transform.position.y - fallingSpeed,//Y
+                -10//Z
+                );
+            }
+            // 타겟의 x, y, z 좌표에 카메라의 좌표를 더하여 카메라의 위치를 결정
+            transform.position = Vector3.Lerp(transform.position, TargetPos, .2f);
+            //transform.position = Vector3 (t
         }
-        else
-        {
-            TargetPos = new Vector3(
-            Target.transform.position.x + offsetX,//X
-            transform.position.y-fallingSpeed,//Y
-            -10//Z
-            );
-        }
-        // 타겟의 x, y, z 좌표에 카메라의 좌표를 더하여 카메라의 위치를 결정
-        transform.position=TargetPos;
     }
 }

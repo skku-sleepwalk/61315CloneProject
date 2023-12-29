@@ -3,7 +3,7 @@ guid: d120b1653470164418774dc700386e0f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,13 +63,14 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -307,13 +308,13 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Fire_Run_cigarette-Sheet_0: -1096041977
-      Fire_Run_cigarette-Sheet_5: -645443606
-      Fire_Run_cigarette-Sheet_4: 1430727559
       Fire_Run_cigarette-Sheet_1: -907446216
-      Fire_Run_cigarette-Sheet_3: -1908438492
       Fire_Run_cigarette-Sheet_2: -1264761677
-      Fire_Run_cigarette-Sheet_7: -1863085983
+      Fire_Run_cigarette-Sheet_3: -1908438492
+      Fire_Run_cigarette-Sheet_4: 1430727559
+      Fire_Run_cigarette-Sheet_5: -645443606
       Fire_Run_cigarette-Sheet_6: 439279166
+      Fire_Run_cigarette-Sheet_7: -1863085983
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

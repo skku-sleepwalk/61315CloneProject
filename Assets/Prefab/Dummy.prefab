@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: -5397143116193503054}
   - component: {fileID: 9089342509069503723}
   - component: {fileID: 8565438001865594475}
-  - component: {fileID: -3083834740063053245}
   - component: {fileID: 1280809949048629694}
   - component: {fileID: 707782068954590492}
+  - component: {fileID: -7362218162183674897}
   m_Layer: 7
   m_Name: Dummy
   m_TagString: Untagged
@@ -132,7 +132,7 @@ MonoBehaviour:
   item: {fileID: 8695612826760350070, guid: bf36a5b1529423b409644401f32b04a4, type: 3}
 --- !u!95 &8565438001865594475
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -149,24 +149,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-3083834740063053245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7314854713721929783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4ce54ddc4c10994383f70945f78e10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  init: {fileID: 9100000, guid: 833dcaeeebd0ce24393812b0777435e1, type: 2}
-  cigarette:
-  - {fileID: 9100000, guid: 3c5a946c70b53344d9cf7fbc8214720a, type: 2}
-  - {fileID: 9100000, guid: 9130520881e22a54996756a3c09ffa5b, type: 2}
-  - {fileID: 9100000, guid: fa0b29b9b4062ed4ebc85af9413a71f6, type: 2}
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1280809949048629694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,3 +259,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7362218162183674897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314854713721929783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ce54ddc4c10994383f70945f78e10a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cigarette:
+  - {fileID: 9100000, guid: 833dcaeeebd0ce24393812b0777435e1, type: 2}
+  - {fileID: 9100000, guid: 3c5a946c70b53344d9cf7fbc8214720a, type: 2}
+  - {fileID: 9100000, guid: 9130520881e22a54996756a3c09ffa5b, type: 2}
+  - {fileID: 9100000, guid: fa0b29b9b4062ed4ebc85af9413a71f6, type: 2}
+  - {fileID: 9100000, guid: 3ab7b31824947284096257baac3c985c, type: 2}
+  - {fileID: 9100000, guid: 0de22311fd2e8ea43ae9c7afe4fb7233, type: 2}
+  - {fileID: 9100000, guid: 37eb481b4e6a3c346890a0cff0f78332, type: 2}
+  - {fileID: 9100000, guid: 6eb545788ffdf3e4392be2f81b689dd1, type: 2}
+  - {fileID: 9100000, guid: 193ecea3383b7b04aad0b9fb842944ed, type: 2}
+  - {fileID: 9100000, guid: d90a437db57c73e40a97652166094d90, type: 2}
+  - {fileID: 9100000, guid: 0eaac6d21a1129f4eb57a6163d0bf099, type: 2}
+  - {fileID: 9100000, guid: f00f7952f9e748c458182f24d1b85e8c, type: 2}

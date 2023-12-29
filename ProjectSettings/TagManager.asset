@@ -10,11 +10,12 @@ TagManager:
   - Main delete
   - Enemy
   - ShieldItem
+  - SpecialTile
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - foot
   - Water
   - UI
   - ground

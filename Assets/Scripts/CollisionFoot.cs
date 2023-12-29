@@ -12,22 +12,23 @@ public class CollisionFoot : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("MainCharacter") && collision.contacts[0].normal.y>-1.3f&& collision.contacts[0].normal.y < -0.7f)
+        Vector2 RayPoint = gameObject.transform.position;
+        RaycastHit2D hitUp = Physics2D.BoxCast(RayPoint, new Vector2(0.4f, 0.01f), 0, Vector3.up, 0.3f, 1 << 3);
+        if (hitUp)
         {
             BoxCollider2D Box = gameObject.GetComponent<BoxCollider2D>();
             Rigidbody2D rigid = gameObject.GetComponent<Rigidbody2D>();
             Box.isTrigger = true;
             isDead = true;
             if (gameObject.transform.position.x - collision.transform.position.x > 0)
-                rigid.AddForce(new Vector2(5f, 200f));
+                rigid.AddForce(new Vector2(Random.Range(4f,6f), 10f), ForceMode2D.Impulse);
             else
-                rigid.AddForce(new Vector2(-5f, 200f));
+                rigid.AddForce(new Vector2(Random.Range(-4f, -6f), 10f), ForceMode2D.Impulse);
+            GameObject MainCharacter = GameObject.FindWithTag("MainCharacter");
+            MainCharacter.GetComponent<CollisionMC>().ApplyForce();
             AudioManagerMC.AudioPlay(foot);
         }
-        else if(collision.gameObject.CompareTag("MainCharacter")){
-            moveRight script = GetComponent<moveRight>();
-            script.changeVelocity(-4);
-        }
+       
     }
     IEnumerator MyFunctionWithDelay()
     {

@@ -13,7 +13,7 @@ public class ObjectGenerator : MonoBehaviour
     public GameObject floors1;
     public GameObject floors2;
     public GameObject floorParent;
-    public Sprite[] usingFloors = new Sprite[3];
+    //public Sprite[] usingFloors = new Sprite[3];
     public GameObject enemy;
     public GameObject shieldItem;
     // Start is called before the first frame update
@@ -151,7 +151,7 @@ public class ObjectGenerator : MonoBehaviour
                 randomValue2 = Random.Range(12, 22);
                 sign = Random.Range(0, 2);
                 itemSign = Random.Range(0, 2);
-                randomValue3 = Random.Range(0, 10);
+                randomValue3 = Random.Range(0, 15);
                 randomValue4 = Random.Range(0,(int)(Frequency));
                 GameObject tmp=null;
                 if((int)character.transform.position.y - j < 3)//이게 아마 시작할 때 위에 안 생기게 하려고 하는 거일 거임
@@ -187,14 +187,7 @@ public class ObjectGenerator : MonoBehaviour
             //k,k2 언젠가 엎고만다.
             for(int i=k;i<=k+50;i++){
                 SpawnObject(new Vector3(i * interval, floorSummonPosition, 0), floors);
-                //if (sign == 0 & i == randomValue)
-                //{//적 생성
-                //    SpawnObject(new Vector3((i * interval), floorSummonPosition + 0.5f, 0), enemy);
-                //}   
-                //if (itemSign == 0 && i == randomValue2 && randomValue3 == 3)
-                //{// 아이템 생성
-                //    SpawnObject(new Vector3((i * interval), floorSummonPosition + 0.45f, 0), shieldItem);
-                //}
+            
             }
             for(int i=k2;i<=k2+ 50; i++){
                 SpawnObject(new Vector3(-(i * interval), floorSummonPosition, 0), floors);

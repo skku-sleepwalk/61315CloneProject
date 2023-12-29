@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 803702204254333624}
   - component: {fileID: 2671616233230675525}
   - component: {fileID: -235312658242540347}
-  - component: {fileID: 4413301121182974117}
   - component: {fileID: 6643012985210514249}
+  - component: {fileID: 4745382469856651377}
   m_Layer: 6
   m_Name: Blue_slow floor
   m_TagString: SpecialTile
@@ -126,18 +126,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.69743913, y: 0.64}
   m_EdgeRadius: 0
---- !u!114 &4413301121182974117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8668353885512103870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 231e007b45989c5419916414c958b112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6643012985210514249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,3 +140,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blue: {fileID: 1169080180, guid: 9092a9a798af7b64289e9092db5fef5b, type: 3}
   pink: {fileID: -51398199, guid: 8f2abb503e12f1546bba865125982fd8, type: 3}
+  yellow: {fileID: 1389661775, guid: cbe42e4ff14622a469152c93afc9809b, type: 3}
+--- !u!114 &4745382469856651377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8668353885512103870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebd4fea8ded87a4292471425550a61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

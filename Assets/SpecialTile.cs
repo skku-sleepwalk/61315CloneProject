@@ -18,7 +18,7 @@ public class SpecialTile : MonoBehaviour
     private void Awake()
     {
         rand= Random.Range(0, 100);
-        if (rand == 0)
+        if (rand <1)
         {
             GameObject specialTile=Instantiate(slow);
             specialTile.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 0.05f, gameObject.transform.position.z);
@@ -26,6 +26,7 @@ public class SpecialTile : MonoBehaviour
             specialTileL.transform.position = new Vector3(gameObject.transform.position.x-0.2f, gameObject.transform.position.y - 0.05f, gameObject.transform.position.z);
             GameObject specialTileR = Instantiate(slowR);
             specialTileR.transform.position = new Vector3(gameObject.transform.position.x+0.2f, gameObject.transform.position.y - 0.05f, gameObject.transform.position.z);
+
         }
         if (rand == 1/*==1<99*/)
         {
@@ -50,10 +51,7 @@ public class SpecialTile : MonoBehaviour
             gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         }
     }
-    private void Start()
-    {
 
-    }
 
     IEnumerator PopCoroutine()
     {

@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3327622768695782917}
   - component: {fileID: 803702204254333624}
-  - component: {fileID: 2671616233230675525}
   - component: {fileID: -235312658242540347}
-  - component: {fileID: 4413301121182974117}
   - component: {fileID: 8584183189095869483}
+  - component: {fileID: 4334497655146814463}
   m_Layer: 6
   m_Name: Blue_slow floor 1
   m_TagString: SpecialTile
@@ -88,18 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2671616233230675525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8668353885512103870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59314a483b7832d46b16b38e531ab5a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &-235312658242540347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,18 +113,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.69743913, y: 0.64}
   m_EdgeRadius: 0
---- !u!114 &4413301121182974117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8668353885512103870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 231e007b45989c5419916414c958b112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8584183189095869483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,3 +127,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blue: {fileID: -1342232056, guid: 9092a9a798af7b64289e9092db5fef5b, type: 3}
   pink: {fileID: 68733012, guid: 8f2abb503e12f1546bba865125982fd8, type: 3}
+  yellow: {fileID: 527706002, guid: cbe42e4ff14622a469152c93afc9809b, type: 3}
+--- !u!114 &4334497655146814463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8668353885512103870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebd4fea8ded87a4292471425550a61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

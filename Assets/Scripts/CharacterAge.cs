@@ -9,6 +9,7 @@ public class CharacterAge : MonoBehaviour
     public RuntimeAnimatorController controller;//1회차
     public RuntimeAnimatorController controller2;//2회차
     public RuntimeAnimatorController controller3;//3회차
+    public GameObject effect;
     RuntimeAnimatorController[] controllers;
     public AudioClip chapter;
     private int student;
@@ -20,8 +21,10 @@ public class CharacterAge : MonoBehaviour
     private string[][] jobs = { new string[] { "Doctor", "Nurse", "Pharmacist" }, new string[] { "Youtuber", "Athelete", "Singer" }, new string[] { "Teacher", "Politician", "Judge" } };
     private int returnNum = -1;
     int rand;
+    Animator anim;
     private void Awake()
     {
+        anim = effect.GetComponent<Animator>();
         student = 15;
         job = jobs[0];
         rand = Random.Range(0, 3);
@@ -66,8 +69,8 @@ public class CharacterAge : MonoBehaviour
                 AudioSource ChapterChanged = GetComponent<AudioSource>();
                 ChapterChanged.PlayOneShot(chapter);
             }
-            
 
+           anim.SetTrigger("Effect");
 
 
             // 이거 옮겨야

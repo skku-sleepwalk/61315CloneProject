@@ -13,9 +13,9 @@ public class Stop: MonoBehaviour
         stoped = false;
     }
     public void StopFunction()
-    {   //GameObject tmp=Instantiate(btn);
-        targetObject.SetActive(true);
-        //tmp.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y, 0);
+    {   GameObject tmp=Instantiate(btn);
+        //targetObject.SetActive(true);
+        tmp.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y, 0);
         Time.timeScale = 0f;
         CameraMove.isMoving = false;
         stoped=true;

@@ -47,7 +47,7 @@ public class CharacterAge : MonoBehaviour
                
                     student = 15;
                     returnNum++;
-                    animator.runtimeAnimatorController = controllers[(returnNum+1)%3];
+                    animator.runtimeAnimatorController = controllers[(returnNum)%3];
                     job = jobs[(returnNum+1)%3];
                     rand = Random.Range(0, 3);
                     names[1] = job[rand];

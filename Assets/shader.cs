@@ -11,7 +11,7 @@ public class shader : MonoBehaviour
 
 
     private int age;
-    private int[] ageTable = { 15, 30, 38, 17 };
+    private int[] ageTable = { 15, 30, 39 , 16 };
     int index = 0;
     private void Awake()
     {

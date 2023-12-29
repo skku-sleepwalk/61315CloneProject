@@ -18,16 +18,16 @@ public class Score : MonoBehaviour
     
     void Update()
     {
-        score = -((int)Character.transform.position.y - 2);
+        score = (Character.transform.position.y<0 ? -((int)Character.transform.position.y - 2) +1: - ((int)Character.transform.position.y - 2));
         //주인공의 위치를 나누어 계산
         //Debug.Log(score);
-        if(score % 300 >= 199)
+        if(score % 300 >= 200)
         {//나중에 성능 개선을 위해서 한번만
             BroadcastMessage("ColorChangeYellow", SendMessageOptions.DontRequireReceiver);
    
             floorChanger.imageNumChanger(2);
         }
-        else if (score % 300 >= 99)
+        else if (score % 300 >= 100)
         {
             BroadcastMessage("ColorChangePink", SendMessageOptions.DontRequireReceiver);
             floorChanger.imageNumChanger(1);

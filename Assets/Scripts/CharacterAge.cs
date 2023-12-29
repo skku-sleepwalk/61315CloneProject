@@ -13,20 +13,20 @@ public class CharacterAge : MonoBehaviour
     public AudioClip chapter;
     private int student;
     private Animator animator;
-    private int[] ageTable = { 15, 30, 38 };
+    private int[] ageTable = { 15, 30, 39 };
     private int index = 0;
     private string[] names = { "Student", "Doctor", "Elder", "Return" };//가운데 값 변경하면서 조절
     private string[] job = { "Doctor", "Nurse", "Pharmacist" };
-    private string[][] jobs = { new string[] { "Doctor", "Nurse", "Pharmacist" }, new string[] {"Youtuber","Athelete","Singer" },new string[] {"Teacher","Politician","Judge" } };
+    private string[][] jobs = { new string[] { "Doctor", "Nurse", "Pharmacist" }, new string[] { "Youtuber", "Athelete", "Singer" }, new string[] { "Teacher", "Politician", "Judge" } };
     private int returnNum = -1;
     int rand;
     private void Awake()
     {
         student = 15;
         job = jobs[0];
-         rand = Random.Range(0, 3);
+        rand = Random.Range(0, 3);
         names[1] = job[rand];
-        returnNum = -1;
+        returnNum = 0;
 
         animator = GetComponent<Animator>();
         animator.runtimeAnimatorController = controller;
@@ -39,10 +39,10 @@ public class CharacterAge : MonoBehaviour
 
     private void Update()
     {
-        if (Score.getScore()%100 > student && (Score.getScore() / 100 > returnNum))
+        if (Score.getScore() % 100 > student || (Score.getScore() / 100 > returnNum))
         {
 
-            if (student == 98) { 
+            if (student == 99) { 
                 
                
                     student = 15;

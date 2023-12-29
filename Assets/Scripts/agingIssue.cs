@@ -9,7 +9,7 @@ public class agingIssue : MonoBehaviour
     public RuntimeAnimatorController[] cigarette=new RuntimeAnimatorController[12];//3.4.4
 
     private int age;
-    private int[] ageTable = { 15, 30, 38,17};
+    private int[] ageTable = { 15, 30, 39,16};
         private int index = 0;
    private void Awake()
     {

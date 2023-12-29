@@ -21,11 +21,11 @@ public class backgroundChanger : MonoBehaviour
     void Update()
     {
 
-        if (Score.getScore() % 300 >= 199)
+        if (Score.getScore() % 300 >= 200)
         {
             myImage.sprite = yellow;
         }
-        else if (Score.getScore() % 300 >= 99)
+        else if (Score.getScore() % 300 >= 100)
         {
             myImage.sprite = pink;
         }

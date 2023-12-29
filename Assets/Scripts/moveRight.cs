@@ -15,7 +15,7 @@ public class moveRight : MonoBehaviour
         this.velocity = 3;
         int score = Score.getScore();
         while(score > 100) {
-            this.velocity += 1f;
+            this.velocity += 2f;
 
             score -= 100;
         }
